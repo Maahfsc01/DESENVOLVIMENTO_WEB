@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!--<title>INFOFUT</title>-->
+        <meta name="description" content="O site que te deixa informado sobre o que acontece no Futebol">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link para botoes-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!--link para favicon-->
+        <link rel="icon" href="logo/favicon-512x512.png" type="img/png">
+        <!--style para rolagem da página (Botão HOME=INFOFUT)-->
+        <style>
+          html {
+            scroll-behavior: smooth;
+          }
+        </style>
+        <!--fim style para rolagem da página (Botão HOME=INFOFUT)-->
+    </head>
+    <body>
+        <!--função do botão HOME=INFOFUT)-->
+        <div id="topo"></div>
+        <!--Inicio dos botoes menu-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#topo">INFOFUT</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">NOTÍCIAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">LIGAS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-disabled="true">EQUIPES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SOBRE</a>
+                  </li>
+                </ul>
+                <!--inicio barra de pesquisa-->
+                <form class="d-flex" role="search">
+                  <input id="barra-pesquisa" class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                  <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                </form>
+                <!--fim barra de pesquisa-->
+              </div>
+            </div>
+          </nav>
+        <!--Fim dos botoes menu-->
+        <!--início cabeçalho-->
+        <header>
+            <h1><strong>A Diversao começa aqui</strong></strong></h1>
+            <P>Quiz sobre Futebol !</P>
+            <!--inicio do carrosel-->
+            <div id="carouselExampleRide" class="carousel slide" data-bs-interval="100" data-bs-ride="true">
+              <div class="carousel-inner">
+                <div class="carousel-item active d-flex justify-content-center">
+                  <img src="logo/carousel-800x600.png" class="d-block w-50" alt="..." style="max-width: 100%; height: auto;">
+                </div>
+                <!--fim primeira imagem-->
+                <div class="carousel-item active d-flex justify-content-center">
+                  <img src="logo/carousel-800x600.png" class="d-block w-50" alt="...">
+                </div>
+                <!--fim segunda imagem-->
+                <div class="carousel-item active d-flex justify-content-center">
+                  <img src="logo/carousel-800x600.png" class="d-block w-50" alt="...">
+                </div>
+                <!--fim terceira imagem-->
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!--fim do carrosel-->
+        </header>
+        <!--inicio cards-->
+        <div class="card-group">
+          <div class="card card-noticia">
+            <img src="img/mano-volta-para-o-gremio.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mano Meneses volta ao Grêmio após 18 anos</h5>
+              <p class="card-text">O Grêmio acertou a contratação de Mano Menezes para assumir o comando técnico da equipe. Vinte anos após sua primeira passagem pelo clube, o treinador volta ao Tricolor para tentar reverter o mau momento da equipe no Campeonato Brasileiro.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card card-noticia">
+            <img src="img/tite-nao-fecha-com-corinthians.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tite diz não ao Corinthians</h5>
+              <p class="card-text">Treinador gaúcho alegou que precisa cuidar de sua saúde física e mental; clube já dava o acordo como certo</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card card-noticia">
+            <img src="img/carlo-selecao-brasileira.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Carlo Ancelotti aceita convite da seleção brasileira?</h5>
+              <p class="card-text">Em meio à má fase do time merengue, Ancelotti é especulado para deixar o comando da equipe espanhola, tendo o nome ligado até para ser um substituto de Dorival Júnior no comando da seleção brasileira. Porém, durante a coletiva, apesar de não cravar seu futuro, o italiano deu indícios de uma possível permanência para 2025/26.</p>
+              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+        <!--fim cards-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <main>
+            <section>
+                <h2>Sobre esse quiz</h2>
+                <p>O quiz <sTRong>INFOFUT</sTRong> foi desenvolvido para testar seus conhecimentos sobre Futebol.</p>
+                <p>Você encontrada diferentes tipos de perguntas, incluindo múltipla escolha.</p>
+                <p>Vão ser Perguntas de diferentes equipes de Futebol</p>
+            </section>
+        </main>
+        <footer>aaaaa</footer>
+        
+        <!--link botoes do menu-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <!--inicio JavaScript para a barra de pesquisa-->
+        <script>
+          const barraPesquisa = document.getElementById("barra-pesquisa");
+          
+          barraPesquisa.addEventListener("input", function() {
+            const texto = barraPesquisa.value.toLowerCase();
+            const cards = document.querySelectorAll(".card-noticia");
+
+            cards.forEach(card => {
+              const conteudo = card.textContent.toLowerCase();
+
+              if (conteudo.includes(texto)) {
+                card.style.display = "block";
+              } else {
+                card.style.display = "none";
+              }
+            });
+          });
+        </script>
+    </body>
+</html>
