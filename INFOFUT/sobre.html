@@ -1,51 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sobre</title>
-    <!--link para botoes-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!--style para rolagem da página (Botão HOME=INFOFUT)-->
-    <style>
-        html {
-          scroll-behavior: smooth;
-        }
-      </style>
-      <!--fim style para rolagem da página (Botão HOME=INFOFUT)-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre</title>
+  <!-- Link para Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" href="logo/favicon-512x512.png" type="image/png" />
+  <!-- Estilo para rolagem suave e espaçamento do topo -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      padding-top: 70px;
+    }
+  </style>
 </head>
 <body>
-            <!--função do botão HOME=INFOFUT)-->
-            <div id="topo"></div>
-            <!--Inicio dos botoes menu-->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-                <div class="container-fluid">
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="index.html">INFOFUT</a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="noticias.html">NOTÍCIAS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="ligas.html">LIGAS</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" aria-disabled="contato.html">CONTATO</a>
-                      </li>
-                      <!--<li class="nav-item">
-                        <a class="nav-link" href="#">SOBRE</a>-->
-                      </li>
-                    </ul>
-                    <!--fim dos botões-->
+  <!-- ir para o topo-->
+  <div id="topo"></div>
 
+  <!-- inicio menu botões-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!--link botoes do menu-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="index.html">INFOFUT</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="noticias.html">NOTÍCIAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ligas.html">LIGAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">CONTATO</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">SOBRE</a>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- fim menu dos botões-->
 
+  <!-- inicio do carrossel -->
+  <header class="my-5">
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <img src="logo/carousel-800x600.png" class="d-block mx-auto" alt="Imagem do carrossel" style="max-width: 800px; width: 100%; height: auto;">
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+  <!--fim do carrossel-->
+
+  <!-- inicio Copyright-->
+  <footer class="text-center py-3 mt-5 bg-light">
+    &copy; 2025 Matheus Costa. Todos os direitos reservados.
+  </footer>
+
+  <!-- Script Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
